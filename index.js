@@ -107,6 +107,8 @@ client.connect(err => {
   
 });
 
-
+app.get('/', (req, res) => {
+  res.send("This is the server of book passage projects")
+})
 
 app.listen(process.env.PORT || port)
